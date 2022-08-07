@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="pause30">icons/pause30.png</file>
+        <file alias="pause60">icons/pause60.png</file>
+        <file alias="play30">icons/play30.png</file>
+        <file alias="play60">icons/play60.png</file>
+        <file alias="stop30">icons/stop30.png</file>
+        <file alias="stop60">icons/stop60.png</file>
+    </qresource>
+</RCC>

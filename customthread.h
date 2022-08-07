@@ -19,7 +19,7 @@ public:
     void pause();
 
 signals:
-    void valueGenerated(double xVal, double yVal);
+    void pointGenerated(double xVal, double yVal);
 
 protected:
     void run() override;

@@ -45,7 +45,7 @@ void CustomThread::run()
             _waitForPlay->wait(_sync);
         _sync->unlock();
 
-        emit valueGenerated(_generator->generateDouble(),_generator->generateDouble());
+        emit pointGenerated(_generator->generateDouble(),_generator->generateDouble());
         sleep(1);
     }
 }

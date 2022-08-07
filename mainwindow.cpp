@@ -36,8 +36,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(_pauseButton, &QPushButton::clicked, this,&MainWindow::pause);
     connect(_stopButton, &QPushButton::clicked, this,&MainWindow::stop);
 
-    connect(_chartView, &ChartView::addedPoint,_thread, &CustomThread::resume);
-    connect(_thread, &CustomThread::valueGenerated,[this](double xVal, double yVal){
+    connect(_thread, &CustomThread::pointGenerated,[this](double xVal, double yVal){
         _chartView->addPoint(xVal,yVal);
     });
 }
